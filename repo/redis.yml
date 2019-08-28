@@ -1,5 +1,5 @@
 spring:
   redis:
-    host: localhost
+    host: 47.107.80.131
     port: 6379
-    password:
+    password: abc123456
