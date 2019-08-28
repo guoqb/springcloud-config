@@ -3,7 +3,7 @@ spring:
     druid:
       url: jdbc:mysql://47.107.80.131:3306/blog_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false
       username: root
-      password: abc123!!
+      password: Abc123###aliyun
       stat-view-servlet:
         login-username: admin
         login-password: admin
