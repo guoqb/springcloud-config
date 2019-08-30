@@ -6,3 +6,7 @@ spring:
     name: index
   profiles:
     active: dev
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.lynn.index.entity
