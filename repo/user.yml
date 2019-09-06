@@ -6,3 +6,20 @@ spring:
     name: user
   profiles:
     active: dev
+
+###############################mongodb配置##########################
+mongo.hosts: 47.110.134.124:27017
+mongo.connectionsPerHost: 50
+mongo.threadsAllowedToBlockForConnectionMultiplier: 20
+mongo.connectTimeout: 100000
+mongo.maxWaitTime: 30000
+mongo.autoConnectRetry: true
+mongo.socketKeepAlive: true
+mongo.socketTimeout: 100000
+mongo.username: xlink
+mongo.password: Mdb4Xlink
+#用户所在数据库
+mongo.authdatabase: admin
+#数据存储数据库
+mongo.database: xlink_workorder
+mongo.replicaSet:
