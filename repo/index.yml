@@ -6,7 +6,19 @@ spring:
     name: index
   profiles:
     active: dev
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: test-consumer-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
   type-aliases-package: com.lynn.index.entity
+
+
+
